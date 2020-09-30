@@ -15,7 +15,11 @@ impl Package {
         if weight_in_grams <= 0 {
             panic!("Can't ship a package with negative or zero weight");
         } else {
-            return Package {sender_country, recipient_country, weight_in_grams};
+            return Package {
+                sender_country,
+                recipient_country,
+                weight_in_grams,
+            };
         }
     }
 
